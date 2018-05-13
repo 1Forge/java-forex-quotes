@@ -25,7 +25,12 @@ Please see the list of known issues here: [Issues](https://github.com/1Forge/jav
 
 ## Installation
 
-FIXME
+Gradle:
+```
+dependencies {
+        implementation 'com.github.1Forge:java-forex-quotes:-SNAPSHOT'
+}
+```
 
 ## Usage
 
