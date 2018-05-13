@@ -9,7 +9,7 @@ public class RESTExample
     public static void main(String args[])
     {
         //Initialize the client
-        ForexDataClient client = new ForexDataClient("0JHZqgJf7V3tvd7BA3MGThQB3NqVX7F9");
+        ForexDataClient client = new ForexDataClient("YOUR_API_KEY");
 
         //Get the list of available symbols
         try
