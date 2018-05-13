@@ -24,7 +24,7 @@ Please see the example [here](https://github.com/1Forge/java-forex-quotes/blob/m
 Please see the list of known issues here: [Issues](https://github.com/1Forge/java-forex-quotes/issues)
 
 ## Installation
-
+The .jar can be found [here](https://github.com/1Forge/java-forex-quotes/raw/master/out/artifacts/java_forex_quotes_jar/java-forex-quotes.jar)
 
 ## Usage
 
