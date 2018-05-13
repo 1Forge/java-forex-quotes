@@ -2,7 +2,7 @@
 
 java-forex-quotes is a Java library for fetching realtime forex quotes.
 Any contributions or issues opened are greatly appreciated.
-Please see example [here](https://github.com/1Forge/java-forex-quotes/tree/master/src/RESTExample.java)
+Please see example [here](https://github.com/1Forge/java-forex-quotes/blob/master/src/com/_1forge/java/RESTExample.java)
 
 # Table of Contents
 - [Requirements](#requirements)
