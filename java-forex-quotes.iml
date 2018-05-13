@@ -10,21 +10,21 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../java-libs/java-json.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/java-libs/commons-io-2.6.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/../java-libs/java-json.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../java-libs/commons-io-2.6.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/java-libs/java-json.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Desktop/java-libs/java-json.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>
