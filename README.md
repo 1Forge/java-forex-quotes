@@ -18,7 +18,6 @@ Please see the example [here](https://github.com/1Forge/java-forex-quotes/blob/m
 
 ## Requirements
 * An API key which you can obtain for free at http://1forge.com/forex-data-api
-* Java
 
 ## Known Issues
 Please see the list of known issues here: [Issues](https://github.com/1Forge/java-forex-quotes/issues)
