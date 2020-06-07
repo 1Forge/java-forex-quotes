@@ -10,57 +10,47 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Symbol
-{
+public class Symbol {
     private String ticker;
 
-    public Symbol(String ticker)
-    {
+    public Symbol(String ticker) {
         this.ticker = ticker;
     }
 
-    public static Symbol[] fromStringArray(String[] tickers)
-    {
+    public static Symbol[] fromStringArray(String[] tickers) {
         List<Symbol> symbols = new ArrayList<Symbol>();
 
-        for (String t : tickers)
-        {
+        for (String t : tickers) {
             symbols.add(new Symbol(t));
         }
 
         return symbols.toArray(new Symbol[symbols.size()]);
     }
 
-    public static String[] toStringArray(Symbol[] symbols)
-    {
+    public static String[] toStringArray(Symbol[] symbols) {
         List<String> tickers = new ArrayList<String>();
 
-        for (Symbol s : symbols)
-        {
+        for (Symbol s : symbols) {
             tickers.add(s.toString());
         }
 
         return tickers.toArray(new String[tickers.size()]);
     }
 
-    public String toString()
-    {
+    public String toString() {
         return this.ticker;
     }
 
-    public static Symbol fromString(String ticker)
-    {
+    public static Symbol fromString(String ticker) {
         return new Symbol(ticker);
     }
 
-    public static Symbol[] fromGetSymbolsCall(JSONObject json) throws Exception
-    {
+    public static Symbol[] fromGetSymbolsCall(JSONObject json) throws Exception {
         List<Symbol> symbols = new ArrayList<Symbol>();
 
         JSONArray jsonArray = json.getJSONArray("json_array");
 
-        for (int i = 0; i < jsonArray.length(); i++)
-        {
+        for (int i = 0; i < jsonArray.length(); i++) {
             symbols.add(new Symbol(jsonArray.getString(i)));
         }
 
