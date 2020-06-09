@@ -1,0 +1,19 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "out/artifacts/**/*.jar",
+            "/Users/aditismacbook/Downloads/json-20140107.jar",
+            "/Users/aditismacbook/Downloads/commons-io-2.4.jar"
+        ],
+        "exclude": [
+            "/Users/aditismacbook/Downloads/websocket-server-9.1.0.M0.jar"
+        ]
+    },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
+}
