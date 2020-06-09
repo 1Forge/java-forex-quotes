@@ -46,7 +46,6 @@ public class ForexDataClient {
 
     public Quote[] getQuotes(final Symbol[] symbols) throws Exception {
         final String pairs = String.join(",", Symbol.toStringArray(symbols));
-        System.out.println(pairs.length());
         if (pairs.length() > 7648) {
             throw new java.lang.RuntimeException("No more than 955 pairs and 1910 curriencies");
         } else {
@@ -123,25 +122,25 @@ public class ForexDataClient {
 
     public void subscribeTo(String symbol) throws Exception {
         this.wsc.subscribeTo(symbol);
-        System.out.println("Symbols sent success" + symbol);
+        // System.out.println("Symbols sent success" + symbol);
 
     }
 
     public void subscribeToAll() throws Exception {
         this.wsc.subscribeToAll();
-        System.out.println("subscribeToAll");
+        // System.out.println("subscribeToAll");
 
     }
 
     public void unsubscribeFrom(String symbol) throws Exception {
         this.wsc.unsubscribeFrom(symbol);
-        System.out.println("Symbols sent success" + symbol);
+        // System.out.println("Symbols sent success" + symbol);
 
     }
 
     public void unsubscribeFromAll() throws Exception {
         this.wsc.unsubscribeFromAll();
-        System.out.println("unsubscribeFromAll");
+        // System.out.println("unsubscribeFromAll");
 
     }
 }

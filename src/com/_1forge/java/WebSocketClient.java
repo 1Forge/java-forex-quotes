@@ -17,14 +17,14 @@ class WebSocketClient implements WebSocket.Listener {
 
     @Override
     public void onOpen(final WebSocket webSocket) {
-        System.out.println("onOpen using subprotocol " + webSocket.getSubprotocol());
+        // System.out.println("onOpen using subprotocol " + webSocket.getSubprotocol());
         WebSocket.Listener.super.onOpen(webSocket);
     }
 
     @Override
     public CompletionStage<?> onText(final WebSocket webSocket, final CharSequence data, final boolean last) {
         String[] parts = data.toString().split("\\|");
-        System.out.println("onText received " + data.toString());
+        // System.out.println("onText received " + data.toString());
         if (parts.length > 0) {
             switch (parts[0]) {
                 case "post_login_success":
@@ -32,7 +32,7 @@ class WebSocketClient implements WebSocket.Listener {
                 case "update":
                     this.listener.onUpdate(parts[1]);
                 default:
-                    System.out.println("Data: " + data.toString());
+                    // System.out.println("Data: " + data.toString());
 
             }
         }
@@ -41,7 +41,7 @@ class WebSocketClient implements WebSocket.Listener {
 
     @Override
     public void onError(final WebSocket webSocket, final Throwable error) {
-        System.out.println("Bad day! " + error.toString());
+        // System.out.println("Bad day! " + error.toString());
         WebSocket.Listener.super.onError(webSocket, error);
     }
 
