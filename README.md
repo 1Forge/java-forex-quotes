@@ -1,3 +1,5 @@
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.1forge/java-forex-quotes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.1forge/java-forex-quotes)
+
 # java-forex-quotes
 
 java-forex-quotes is a Java library for fetching realtime forex quotes.
