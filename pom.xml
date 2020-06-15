@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.1forge</groupId>
   <artifactId>java-forex-quotes</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.4</version>
   <packaging>jar</packaging>
   
   <name>1Forge Library for java-forex-quotes</name>
