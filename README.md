@@ -58,7 +58,7 @@ catch(Exception e)
 ```java
 try
 {
-    String[] tickers = {"EURUSD", "GBPJPY", "BTCUSD"};
+    String[] tickers = {"EUR/USD", "GBP/JPY", "BTC/USD"};
     Symbol[] symbols = Symbol.fromStringArray(tickers);
     Quote[] quotes = client.getQuotes(symbols);
 
